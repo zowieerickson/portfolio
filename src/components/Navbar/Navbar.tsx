@@ -1,6 +1,6 @@
 export default function Navbar() {
   return (
-    <nav className="flex justify-between">
+    <nav className="flex justify-between mb-10">
       <h1 className="uppercase font-mono font-semibold">Zowie Erickson</h1>
       <ul className="flex gap-4">
         <li>Resume</li>
