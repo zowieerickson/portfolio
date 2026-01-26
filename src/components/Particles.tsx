@@ -38,9 +38,10 @@ export const ParticlesComponent = () => {
       detectRetina: false,
       fpsLimit: 120,
       interactivity: {
-        detectsOn: "canvas",
         events: {
-          resize: true,
+          resize: {
+            enable: true,
+          },
         },
       },
       particles: {
@@ -52,19 +53,18 @@ export const ParticlesComponent = () => {
             enable: true,
             area: 1080,
           },
-          limit: 0,
           value: 400,
         },
         opacity: {
           animation: {
             enable: true,
-            minimumValue: 0.05,
+            min: 0.05,
             speed: 0.25,
             sync: false,
           },
           random: {
             enable: true,
-            minimumValue: 0.05,
+            min: 0.05,
           },
           value: 1,
         },
@@ -74,7 +74,7 @@ export const ParticlesComponent = () => {
         size: {
           random: {
             enable: true,
-            minimumValue: 0.5,
+            min: 0.5,
           },
           value: 0.5,
         },
