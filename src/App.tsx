@@ -11,12 +11,15 @@ function App() {
       <main className="relative">
         <Navbar />
         <Map />
-        <div className="flex gap-5">
+        <div className="flex gap-7 mb-6">
           <Headshot />
           <div>
-            <h2 className="font-semibold text-xl tracking-tighter sm:text-2xl">
+            <h2 className="font-semibold text-xl tracking-tighter mb-1 sm:text-3xl">
               Hey, I'm Zowie (zau•ee) 👋
             </h2>
+            <h3 className="font-medium sm:text-xl mb-1">
+              Frontend Software Engineer
+            </h3>
             <a
               href="mailto:zowie.erickson@gmail.com"
               rel="noopener noreferrer"
@@ -52,6 +55,34 @@ function App() {
               </div>
             </a>
           </div>
+        </div>
+        <div>
+          <p className="mb-3">
+            I'm a Frontend Software Engineer who specializes in building fast,
+            accessible and user-focused web experiences. I work primarily with
+            React, TypeScript, and modern CSS to deliver polished interfaces and
+            smooth interactions. I've contributed production pages to{" "}
+            <a
+              href="https://www.apple.com/co/buy/"
+              target="_blank"
+              className="text-sky-500 font-bold hover:underline"
+            >
+              Apple.com
+            </a>{" "}
+            and helped ship high-visibility features used by real customers.
+          </p>
+          <p>
+            Currently, I'm working for the{" "}
+            <a
+              href="https://www.courts.wa.gov/"
+              target="_blank"
+              className="text-sky-500 font-bold hover:underline"
+            >
+              State of Washington
+            </a>{" "}
+            on a major modernization of its judicial websites to meet Section
+            508 accessibility standards.
+          </p>
         </div>
       </main>
     </>
