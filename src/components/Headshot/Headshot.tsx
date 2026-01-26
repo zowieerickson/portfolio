@@ -1,7 +1,7 @@
 export default function Headshot() {
   return (
     <img
-      src="/public/headshot-placeholder.jpeg"
+      src="./headshot-placeholder.jpeg"
       className="size-[70px] rounded-full"
       alt="Headshot of Zowie Erickson"
     />
