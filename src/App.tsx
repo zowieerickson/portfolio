@@ -2,9 +2,6 @@ import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import Map from "./components/Map/Map";
 import Headshot from "./components/Headshot/Headshot";
-import Particles from "@tsparticles/react";
-import { useCallback } from "react";
-import { loadFull } from "tsparticles";
 import { ParticlesComponent } from "./components/Particles.tsx";
 
 function App() {

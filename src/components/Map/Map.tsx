@@ -14,7 +14,7 @@ export default function MapComponent() {
     map.once("load", () => {
       map.flyTo({
         center: [-122.444, 47.252], // Tacoma, WA
-        zoom: 12,
+        zoom: 11,
         speed: 1.2, // lower = slower
       });
     });
@@ -22,7 +22,7 @@ export default function MapComponent() {
 
   return (
     <>
-      <div className="group relative h-48 overflow-hidden rounded-tl-xl rounded-tr-xl">
+      <div className="group relative h-48 overflow-hidden ">
         <Map
           ref={mapRef}
           onLoad={handleMapLoad}
@@ -32,10 +32,10 @@ export default function MapComponent() {
             zoom: 1.5,
           }}
           style={{
-            width: 528,
+            width: "100%",
             height: 192,
-            // borderTopLeftRadius: "15px",
-            // borderTopRightRadius: "15px",
+            borderTopLeftRadius: "15px",
+            borderTopRightRadius: "15px",
           }}
           mapStyle="https://tiles.openfreemap.org/styles/liberty"
         >
