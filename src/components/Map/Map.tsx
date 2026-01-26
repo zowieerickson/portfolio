@@ -37,7 +37,7 @@ export default function MapComponent() {
             borderTopLeftRadius: "15px",
             borderTopRightRadius: "15px",
           }}
-          mapStyle="https://tiles.openfreemap.org/styles/liberty"
+          mapStyle="https://cdn.solvice.io/styles/dark.json" // change dark.json to light.json for future theme toggle functionality
         >
           <Marker
             longitude={-122.4442906}
