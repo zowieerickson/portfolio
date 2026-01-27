@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Map from "./components/Map/Map";
 import Headshot from "./components/Headshot/Headshot";
 import { ParticlesComponent } from "./components/Particles.tsx";
+import WorkExperience from "./components/WorkExperience/WorkExperience.tsx";
 
 function App() {
   return (
@@ -84,6 +85,7 @@ function App() {
             508 accessibility standards.
           </p>
         </div>
+        <WorkExperience />
       </main>
     </>
   );
