@@ -1,6 +1,21 @@
 import Job from "../Job/Job";
+import { useRef, useEffect } from "react";
 
 export default function WorkSection() {
+  const gradientRef = useRef(null);
+
+  useEffect(() => {
+    const onScroll = () => {
+      const scrollY = window.scrollY;
+
+      gradientRef.current.setAttribute("y1", scrollY + 200);
+      gradientRef.current.setAttribute("y2", scrollY - 100);
+    };
+
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
     <section>
       <h3 className="text-center text-2xl font-bold mb-5">Work Experience</h3>
@@ -40,12 +55,13 @@ export default function WorkSection() {
             ></path>
             <defs>
               <linearGradient
+                ref={gradientRef}
                 id="gradient"
                 gradientUnits="userSpaceOnUse"
                 x1="0"
                 x2="0"
-                y1="533.3145340236687"
-                y2="377.25813609467457"
+                y1="0"
+                y2="0"
               >
                 <stop stop-color="#18CCFC" stop-opacity="0"></stop>
                 <stop stop-color="#18CCFC"></stop>
