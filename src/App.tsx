@@ -57,7 +57,7 @@ function App() {
             </a>
           </div>
         </div>
-        <div>
+        <div className="mb-16">
           <p className="mb-3">
             I'm a Frontend Software Engineer who specializes in building fast,
             accessible and user-focused web experiences. I work primarily with

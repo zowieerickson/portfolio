@@ -3,7 +3,7 @@ import Job from "../Job/Job";
 export default function WorkSection() {
   return (
     <section>
-      <h3 className="text-center text-xl font-medium">Work Experience</h3>
+      <h3 className="text-center text-2xl font-bold mb-5">Work Experience</h3>
       <div className="relative w-full max-w-4xl mx-auto h-full sm:flex hidden">
         <div className="absolute -left-4 md:-left-20 top-3">
           <div
