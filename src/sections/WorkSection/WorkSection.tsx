@@ -1,5 +1,6 @@
 import Job from "./Job";
 import { useRef, useEffect } from "react";
+import SectionTitle from "../../components/SectionTitle";
 
 export default function WorkSection() {
   const gradientRef = useRef<SVGLinearGradientElement | null>(null);
@@ -20,7 +21,7 @@ export default function WorkSection() {
 
   return (
     <section>
-      <h3 className="text-center text-2xl font-bold mb-5">Work Experience</h3>
+      <SectionTitle title="Work Experience" />
       <div className="relative w-full max-w-4xl mx-auto h-full sm:flex hidden">
         <div className="absolute -left-4 md:-left-20 top-3">
           <div
