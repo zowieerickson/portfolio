@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Map from "./components/Map/Map";
 import Headshot from "./components/Headshot/Headshot";
 import { ParticlesComponent } from "./components/Particles.tsx";
-import WorkSection from "./sections/WorkSection/WorkSection.tsx";
+import WorkSection from "./sections/WorkExperience/WorkExperience.tsx";
 import Projects from "./sections/Projects/Projects.tsx";
 
 function App() {
