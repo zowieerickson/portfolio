@@ -1,4 +1,4 @@
-import Job from "../Job/Job";
+import Job from "./Job";
 import { useRef, useEffect } from "react";
 
 export default function WorkSection() {
@@ -34,9 +34,9 @@ export default function WorkSection() {
             ></div>
           </div>
           <svg
-            viewBox="0 0 20 1352"
+            viewBox="0 0 20 1200"
             width="20"
-            height="1352"
+            height="1200"
             className=" ml-4 block"
             aria-hidden="true"
           >
@@ -44,13 +44,13 @@ export default function WorkSection() {
               d="M 1 0V -36 l 18 24 V 1081.6000000000001 l -18 24V 1352"
               fill="none"
               stroke="#9091A0"
-              stroke-opacity="0.16"
+              strokeOpacity="0.16"
             ></path>
             <path
               d="M 1 0V -36 l 18 24 V 1081.6000000000001 l -18 24V 1352"
               fill="none"
               stroke="url(#gradient)"
-              stroke-width="1.25"
+              strokeWidth="1.25"
               className="motion-reduce:hidden"
             ></path>
             <defs>
@@ -63,10 +63,10 @@ export default function WorkSection() {
                 y1="0"
                 y2="0"
               >
-                <stop stop-color="#18CCFC" stop-opacity="0"></stop>
-                <stop stop-color="#18CCFC"></stop>
-                <stop offset="0.325" stop-color="#6344F5"></stop>
-                <stop offset="1" stop-color="#AE48FF" stop-opacity="0"></stop>
+                <stop stopColor="#18CCFC" stopOpacity="0"></stop>
+                <stop stopColor="#18CCFC"></stop>
+                <stop offset="0.325" stopColor="#6344F5"></stop>
+                <stop offset="1" stopColor="#AE48FF" stopOpacity="0"></stop>
               </linearGradient>
             </defs>
           </svg>

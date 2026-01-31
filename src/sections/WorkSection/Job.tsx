@@ -18,9 +18,11 @@ export default function Job({
       <h1 className="font-semibold text-2xl capitalize">{position}</h1>
       <p className="font-normal mt-2">{location}</p>
       <p className="font-normal mt-1">{company}</p>
-      <ul className="mt-4 font-normal text-gray-700 dark:text-white/75">
+      <ul className="mt-4 font-normal text-gray-700 list-disc list-outside dark:text-white/75">
         {description.map((item) => (
-          <li>{item}</li>
+          <li className="ms-3.5" key={item}>
+            {item}
+          </li>
         ))}
       </ul>
       <p className="font-normal mt-5">{dates}</p>
