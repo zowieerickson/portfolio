@@ -2,14 +2,16 @@ import Job from "./Job";
 import { useRef, useEffect } from "react";
 
 export default function WorkSection() {
-  const gradientRef = useRef(null);
+  const gradientRef = useRef<SVGLinearGradientElement | null>(null);
 
   useEffect(() => {
     const onScroll = () => {
+      if (!gradientRef.current) return;
+
       const scrollY = window.scrollY;
 
-      gradientRef.current.setAttribute("y1", scrollY + 200);
-      gradientRef.current.setAttribute("y2", scrollY - 100);
+      gradientRef.current.setAttribute("y1", String(scrollY + 200));
+      gradientRef.current.setAttribute("y2", String(scrollY - 100));
     };
 
     window.addEventListener("scroll", onScroll);
