@@ -37,9 +37,9 @@ export default function WorkSection() {
             ></div>
           </div>
           <svg
-            viewBox="0 0 20 1200"
+            viewBox="0 0 20 1352"
             width="20"
-            height="1200"
+            height="1000"
             className=" ml-4 block"
             aria-hidden="true"
           >
