@@ -24,9 +24,11 @@ export default function Project({
           {description}
         </p>
         <h4 className="text-sm font-medium">Technologies</h4>
-        <ul className="grid grid-cols-4">
+        <ul className="grid grid-cols-4 gap-4">
           {technologies.map((technology) => (
-            <li key={technology}>{technology}</li>
+            <li className="rounded-xl border text-center" key={technology}>
+              {technology}
+            </li>
           ))}
         </ul>
         <div>
