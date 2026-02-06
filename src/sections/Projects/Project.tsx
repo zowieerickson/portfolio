@@ -20,11 +20,11 @@ export default function Project({
       <img className="rounded-lg" src={image} />
       <div className="p-6">
         <h3 className="text-xl font-semibold tracking-tight">{title}</h3>
-        <p className="text-sm text-[hsl(215,20.2%,65.1%)] mt-2">
+        <p className="text-sm text-[hsl(215,20.2%,65.1%)] mt-2 mb-7">
           {description}
         </p>
-        <h4 className="text-sm font-medium">Technologies</h4>
-        <ul className="grid grid-cols-4 gap-4">
+        <h4 className="text-sm font-medium mb-2">Technologies</h4>
+        <ul className="grid grid-cols-4 gap-4 mb-7">
           {technologies.map((technology) => (
             <li className="rounded-xl border text-center" key={technology}>
               {technology}
