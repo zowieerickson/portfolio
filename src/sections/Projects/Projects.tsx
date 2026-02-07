@@ -3,9 +3,9 @@ import Project from "./Project";
 
 export default function Projects() {
   return (
-    <section className="mt-78">
+    <section>
       <SectionTitle title="Projects" />
-      <div>
+      <div className="grid grid-cols-2 gap-5">
         <Project
           image="https://mayank-ughade.vercel.app/_next/image?url=%2Finsightful.png&w=828&q=75"
           title="Dev-Union"
