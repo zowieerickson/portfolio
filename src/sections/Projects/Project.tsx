@@ -1,3 +1,5 @@
+import LinkButton from "../../components/LinkButton";
+
 interface Project {
   image: string;
   title: string;
@@ -35,12 +37,12 @@ export default function Project({
           ))}
         </ul>
         <div>
-          <a href={githubLink} target="_blank">
+          <LinkButton href={githubLink} target="_blank">
             GitHub
-          </a>
-          <a href={demoLink} target="_blank">
+          </LinkButton>
+          <LinkButton href={demoLink} target="_blank">
             Live Demo
-          </a>
+          </LinkButton>
         </div>
       </div>
     </article>

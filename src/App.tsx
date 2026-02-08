@@ -86,7 +86,7 @@ function App() {
             508 accessibility standards.
           </p>
         </div>
-        <WorkExperience className="mb-20" />
+        <WorkExperience />
         <Projects />
       </main>
     </>
