@@ -37,10 +37,10 @@ export default function Project({
           ))}
         </ul>
         <div>
-          <LinkButton href={githubLink} target="_blank">
+          <LinkButton href={githubLink} target="_blank" className="primary-btn">
             GitHub
           </LinkButton>
-          <LinkButton href={demoLink} target="_blank">
+          <LinkButton href={demoLink} target="_blank" className="secondary-btn">
             Live Demo
           </LinkButton>
         </div>
